@@ -19,7 +19,7 @@ df = load_data()
 st.sidebar.title("BodyFat Predictor Bot!")
 st.sidebar.write("Hello, please, select the options suitable for you")
 
-age = st.sidebar.slider("age", 1, 100, 21)
+age = st.sidebar.slider("age", 1, 100, 21) * 100
 weight = st.sidebar.slider('weight(kg)', 0, 150, 83) * 2.2
 height = st.sidebar.slider('height(cm)', 0, 250, 178) * 0.3937
 neck = st.sidebar.slider('Neck Circumference(cm)', 0, 100, 38)
